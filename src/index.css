@@ -1,13 +1,314 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    background-color: #230e31;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    line-height: 35px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header h1{
+    color:#fff;
+    line-height: 80px;
+    text-align: center;
+}
+
+a{
+    color: #fff;
+}
+
+button{
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    
+}
+.section-searchBar{
+    margin-top: 60px;
+}
+
+.search-input{
+    width: 300px;
+    height: 40px;
+    padding: 5px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px 0 0 10px;
+}
+
+.btn-search{
+    height: 40px;
+    width: 100px;
+    font-size: 1rem;
+    border-radius: 0 10px 10px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.search-message{
+    margin-left: 25px;
+    color: #00ffff;
+}
+
+.btn-clear{
+    height: 40px;
+    width: 100px;
+    font-size: 1rem;
+    border-radius: 10px;
+    margin-left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.user-list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 1100px;
+    height: auto;
+    margin: 60px 0;
+}
+
+.userItem{
+    display: flex;
+    width: 300px;
+    margin-bottom: 40px;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.userItem-img{
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+}
+
+.useItem-info{
+    font-size: 0.9rem;
+    padding-left: 20px;
+    padding-top: 20px;
+    color: #00ffff;
+}
+
+.userItem-link{
+    padding-bottom: 5px;
+}
+
+.user-details-container{
+    display: flex;
+    width: 1000px;
+    height: auto;
+    margin-top: 60px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.user-details-l{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-details-img{
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.user-details-r{
+    padding: 10px 0 0 40px;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.user-details-type{
+    color: aqua; 
+    margin-left: 15px; 
+    padding: 0 15px;
+    background-color:rgba(0, 255, 255, 0.4);
+    border-radius: 15px;
+}
+
+.user-bio{
+    margin-top: 20px;
+}
+
+.user-marker{
+    color: aqua;
+    padding-bottom: 5px;
+}
+
+.user-github-profile{
+    width: 270px;
+    height: 40px;
+    margin: 20px 0 ;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.user-back-homepage{
+    width: 270px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
+    box-shadow: #fff;
+}
+
+.user-github-profile-link{
+    color: #fff;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
+    box-shadow: #fff;
+}
+
+.user-details-card-field{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center; 
+}
+
+.user-icons{
+    color: aqua;
+}
+
+.user-details-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 180px;
+    height: auto;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.user-details-card-field{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center;
+}
+
+.user-repoList{
+    margin: 40px 0;
+    width: 1000px;
+    height: 800px;
+    color: #fff;
+}
+
+.user-details-repos-title{
+    margin: 30px 0;
+    text-align: center;
+}
+
+.user-repoItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 20px 0;
+    margin-bottom: 50px;
+    box-shadow:5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.user-repoItem:hover{
+    background-color: #230e31;
+}
+
+.user-repo-header{
+    padding: 10px 80px;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    background-color: rgba(90, 82, 82, 0.5);
+    border-radius: 10px;
+}
+
+.user-repo-card-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-repo-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 140px;
+    padding: 5px 0;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.card-w{
+    background-color: rgba(0, 0, 255, 0.1);
+}
+
+.marker-w{
+    color: aqua;
+}
+
+.card-f{
+    background-color: rgba(95, 61, 29, 0.6);
+}
+
+.marker-f{
+    color: rgb(221, 92, 22);
+}
+
+.card-s{
+    background-color: rgba(94, 255, 0, 0.1);
+}
+
+.marker-s{
+    color: rgb(25, 206, 85);
+}
+
+.card-v{
+    background-color: rgba(255, 251, 0, 0.1); 
+}
+
+.marker-v{
+    color: rgb(214, 164, 38);
+}
+
+.card-l{
+    background-color: rgba(55, 3, 55, 0.5); 
+}
+
+.marker-l{
+    color: rgb(255, 0, 162);
 }
